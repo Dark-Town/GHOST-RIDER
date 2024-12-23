@@ -1,15 +1,15 @@
 {
   "name": "ghost",
   "version": "1.0.0",
-  "description": "GHOST-RIDE4 WhatsApp bot created TCRONEB With using Node.js",
+  "description": "GHOST-RIDE WhatsApp bot created TCRONEB With using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name lara",
-    "stop": "pm2 stop lara",
-    "restart": "pm2 restart lara"
+    "start": "pm2 start index.js --deep-monitoring --attach --name ghost",
+    "stop": "pm2 stop ghost",
+    "restart": "pm2 restart ghost"
   },
-  "dependencies": {
-    "@whiskeysockets/baileys": "6.6.0",
+ "dependencies": {
+    "@whiskeysockets/baileys": "6.7.9",
     "@adiwajshing/keyed-db": "^0.2.4",
     "pino": "^7.0.5",
     "pm2": "^5.2.0",
@@ -31,6 +31,7 @@
     "child_process":"1.0.2",
     "@mrnima/tiktok-downloader":"1.0.0",
     "@mrnima/facebook-downloader":"1.0.0",
-    "mrnima-moviedl":"1.0.0"
+    "mrnima-moviedl":"1.0.0",
+    "@dark-yasiya/yt-dl.js":"latest"
   }
 }
