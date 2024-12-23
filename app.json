@@ -5,56 +5,61 @@
   "keywords": ["bot"],
   "success_url": "/",
 
-    "stack": "container",
+      "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
-      "value": ""
+      "value": "public"
     },  
     
     "MODE": {
-      "description": "select your bot work type public-private-inbox-group.",
+      "description": "private,inbox,group,public",
       "required": true,
       "value": "public"
-    }, 
-
-    "AUTO_VOICE": {
-      "description": "Make it true if you want bot auto voice.",
-      "required": true,
-      "value": "true"
-    }, 
-
-    "AUTO_REPLY": {
-      "description": "Make it true if you want bot auto reply.",
-      "required": true,
-      "value": "true"
-    }, 
-
-    "AUTO_STICKER": {
-      "description": "Make it true if you want bot auto sticker.",
-      "required": true,
-      "value": "false"
-    }, 
-
-    "AUTO_READ_STATUS": {
-      "description": "Make it true if you want bot auto auto_read_status.",
-      "required": true,
-      "value": "true"
-    }, 
+   },
     
-    "FAKE_RECORDING": {
-      "description": "Make it true if you want bot fake record.",
+    "PREFIX": {
+      "description": "#,!,/,$",
+      "required": true,
+      "value": "."
+    },
+    
+    "AUTO_VOICE": {
+      "description": "Auto send voice message",
       "required": true,
       "value": "true"
     },
-
+    
+    "AUTO_REPLY": {
+      "description": "Auto reply message",
+      "required": true,
+      "value": "true"
+    },
+    
     "AUTO_REACT": {
-      "description": "Make it true if you want bot AutoReact.",
+      "description": "Auto react massage",
+      "required": true,
+      "value": "false"
+    },
+    
+    "AUTO_READ_STATUS": {
+      "description": "Just Now reading status",
+      "required": true,
+      "value": "true"
+    },
+    
+    "ANTI_BAD": {
+      "description": "Bad words remove",
+      "required": true,
+      "value": "false"
+    },
+    
+    "ANTI_LINK": {
+      "description": "Anti link remove",
       "required": true,
       "value": "false"
     }
-
 },
 
      "buildpacks": [
@@ -63,4 +68,4 @@
         }
      ],
   "stack": "heroku-24"
-}
+} 
