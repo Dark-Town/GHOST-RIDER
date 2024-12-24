@@ -1,6 +1,3 @@
-//GHOST-RIDER Whatsapp User Bot
-//Created BY Tcroneb
-
 var commands = [];
 
 function cmd(info, func) {
