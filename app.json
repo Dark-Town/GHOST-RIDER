@@ -1,7 +1,7 @@
 {
-  "name": "GHOST-RIDER",
-  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴀᴡᴀɪs ᴍᴅ",
-  "logo": "https://endpoint.web.id/server/file/8Cmyffly1bMBLr.jpg",
+  "name": "KERM_MD-V4",
+  "description": "ᴊᴀᴠᴀsᴄʀɪᴘᴛ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ Kɢ ᴛᴇᴄʜ",
+  "logo": "https://files.catbox.moe/osriwc.jpg",
   "keywords": ["bot"],
   "success_url": "/",
 
@@ -16,13 +16,13 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://endpoint.web.id/server/file/8Cmyffly1bMBLr.jpg"
+      "value": "https://files.catbox.moe/osriwc.jpg"
     }, 
     
     "ALIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": true,
-      "value": "ʜɪɪ ᴍʏ ᴅᴇᴀʀ ғʀɪᴇɴᴅ ɪᴍ ᴀʟɪᴠᴇ ɴᴏᴡ.!!"
+      "value": "HI DEAR IM ONLINE.!!♻️"
     },
     
     "PREFIX": {
@@ -49,16 +49,10 @@
       "value": "true"
     }, 
 
-    "AUTO_TYPING": {
-      "description": "Make it true if you want auto typing.",
-      "required": false,
-      "value": "true"
-    },
-
     "AUTO_STICKER": {
       "description": "Make it true if you want bot auto sticker.",
       "required": true,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_READ_STATUS": {
@@ -76,74 +70,39 @@
     "ANTI_BAD": {
       "description": "Make it true if you want bot auto delete bad words from group example xxx porn etc.",
       "required": true,
-      "value": "true"
-    }, 
-
-   "CURRENT_STATUS": {
-      "description": "Make it true if want automatic voice reply .",
-      "required": false,
       "value": "false"
     }, 
 
     "FAKE_RECORDING": {
       "description": "Make it true if you want bot fake record.",
       "required": true,
-      "value": "false"
+      "value": "true"
     },
 
     "AUTO_REACT": {
       "description": "Make it true if you want bot AutoReact.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     },
 
     "OWNER_REACT": {
       "description": "Make it true if you want bot OwnerReact.",
-      "required": true,
-      "value": "true"
+      "required": false,
+      "value": "false"
     
     }, 
-
-   "ALWAYS_ONLINE": {
-      "description": "Make it true if want automatic voice reply .",
-      "required": false,
-      "value": "true"
-    }, 
-
-  "AUTO_STATUS_REPLY": {
-      "description": "Make it true if want automatic status reply .",
-      "required": false,
-      "value": "true"
-    },    
 
     "BOT_NAME": {
       "description": "write hear your name.",
       "required": true,
-      "value": "ᴀᴡᴀɪs ᴍᴅ"
+      "value": "✦『𝗞𝗘𝗥𝗠 𝗠𝗗 𝗩4』✦"
     }, 
 
     "HEART_REACT": {
       "description": "Make it true if you want bot only heart ♥️ emjois reaction .",
       "required": true,
       "value": "false"
-    }, 
-
-    "READ_MESSAGE": {
-      "description": "Make it true if you want bot read your all sms just now.",
-      "required": true,
-      "value": "false"
-    }, 
-    "CAPTION": {
-      "description": "enter your caption if you want to show on menu.",
-      "required": true,
-      "value": "*ᴘᴏᴡᴅᴇʀᴇᴅ ʙʏ ᴀᴡᴀɪsxᴄʜᴜᴢᴢᴀ*"
-    }, 
-    "AUTO_STATUS__MSG": {
-      "description": "enter your caption if you want to show on status reply.",
-      "required": true,
-      "value": "𝒚𝒐𝒖𝒓 𝒔𝒕𝒂𝒕𝒖𝒔 𝒔𝒆𝒆𝒏 𝒋𝒖𝒔𝒕 𝒏𝒐𝒘 𝒃𝒚 𝒂𝒘𝒂𝒊𝒔 𝒎𝒅"
     }
-
 
 },
 

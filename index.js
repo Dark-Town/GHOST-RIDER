@@ -1,3 +1,9 @@
+/*created by Kgtech 🕵
+contact dev1 237656520674 ♻️
+contact dev2 237650564445 ♻️
+© Copy coder alert ⚠
+*/
+
 const {
 default: makeWASocket,
 useMultiFileAuthState,
@@ -15,6 +21,7 @@ const fs = require('fs')
 const ff = require('fluent-ffmpeg')
 const P = require('pino')
 const config = require('./config')
+const rankCommand = require('./plugins/rank')
 const qrcode = require('qrcode-terminal')
 const StickersTypes = require('wa-sticker-formatter')
 const util = require('util')
@@ -28,7 +35,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['263716254192']
+const ownerNumber = ['237656520674']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -38,7 +45,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("Session downloaded ✅")
+console.log("SESSION DOWNLOADED COMPLETED ✅")
 })})}
 
 const express = require("express");
@@ -48,7 +55,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("Connecting GHOST-RIDER BOT ⏳️...");
+console.log("CONNECTING KERM_MD-V4🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -68,36 +75,51 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('🧬 Installing')
+console.log('♻️ INSTALLING PLUGINS FILES PLEASE WAIT... 🪄')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('Plugins installed successful ✅')
-console.log('Bot connected to whatsapp ✅')
+console.log('PLUGINS FILES INSTALL SUCCESSFULLY ✅')
+console.log('KERM_MD-V4 CONNECTED TO WHATSAPP ENJOY ✅')
 
-let up = `*╭──────────────●●►*\n> *GHOST-RIDER Cᴏɴɴᴇᴄᴛᴇᴅ Sᴜᴄᴄᴇssғᴜʟʏ Tʏᴘᴇ .Mᴇɴᴜ Tᴏ Gᴇᴛ Cᴏᴍᴍᴀɴᴅ Lɪsᴛ Cʀᴇᴀᴛᴇᴅ Bʏ GHOST-RIDER*\n\n> *Jᴏɪɴ Oᴜʀ Wʜᴀᴛsᴀᴘᴘ Cʜᴀɴɴᴇʟ Fᴏʀ Uᴘᴅᴀᴛᴇs Oꜰ GHOST-RIDER*\n\n*https://whatsapp.com/channel/COMING*\n\n> *Fᴏʟʟᴏᴡ Uꜱ Oɴ TELEɢʀᴀᴍ*\n\n*https://www.t.me/tcronebhackx*\n\n*╭⊱✫ GHOST RIDER MD ✫⊱╮*\n*│✫➠ - \ud83d\udcc2REPOSITORY NAME:* *GHOST RIDER MD*\n*│✫➠ - \ud83d\udcc3DESCRIPTION:* *WORLD OF TECH BEST BOT*\n*│✫➠ - \ud83d\udee1️OWNER:*GHOST RIDER*\n*│✫➠ - \ud83c\udf10URL:* *https://github.com/Dark-Town/GHOST-RIDER*\n\n*YOUR BOT ACTIVE NOW ENJOY♥️*\n\n*PREFIX: ${prefix}*\n\n*╰──────────────●●►*`;
-conn.sendMessage(conn.user.id, { image: { url: `https://qu.ax/QkpAj.jpg` }, caption: up })
+let up = `*╭──────────────●●►*
+> *➺Kᴇʀᴍ_ᴍᴅ-ᴠ4 ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋɢ ᴛᴇᴄʜ✅*
+
+> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ4❁*
+
+*https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45*
+
+> *❁ᴊᴏɪɴ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ4❁*
+
+*https://youtube.com/@KermHackTools-s9s*
+
+*╭⊱✫🐲 KERM_MD-V4 🐲✫⊱╮*
+*│✫➠ - 📂REPOSITORY NAME:* *KERM_MD-V4*
+*│✫➠ - 📃DESCRIPTION:* *THE WORLD BEST WHATSAPP BOT♻️*
+*│✫➠ - 🛡️OWNER:* *KG TECH🇨🇲*
+*│✫➠ - 🌐URL:* *https://github.com/Kgtech-cmr/KERM_MD-V4*
+
+*YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\n*PREFIX: ${prefix}*
+
+*╰──────────────●●►*`;
+conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/osriwc.jpg` }, caption: up })
+
 }
 })
 conn.ev.on('creds.update', saveCreds)  
         
 //=============readstatus=======
-      
+
 conn.ev.on('messages.upsert', async(mek) => {
-  mek = mek.messages[0]
-  if (!mek.message) return
-  mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
-    await conn.readMessages([mek.key])
-  }        
-if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "true"){
-const user = mek.key.participant
-const text = `${config.AUTO_STATUS__MSG}`
-await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
-          }
+mek = mek.messages[0]
+if (!mek.message) return	
+mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
+if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true"){
+await conn.readMessages([mek.key])
+}
 const m = sms(conn, mek)
 const type = getContentType(mek.message)
 const content = JSON.stringify(mek.message)
@@ -148,56 +170,27 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
-//Auto Read Msg
-conn.ev.on('messages.upsert', async (mek) => {
-    try {
-        mek = mek.messages[0];
-        if (!mek.message) return;
-
-        // Handle ephemeral messages
-        mek.message = (getContentType(mek.message) === 'ephemeralMessage') 
-            ? mek.message.ephemeralMessage.message 
-            : mek.message;
-
-        // Auto-read functionality
-        if (config.READ_MESSAGE === 'true') {
-            await conn.readMessages([mek.key]);  // Mark message as read
-            console.log(`Marked message from ${mek.key.remoteJid} as read.`);
-        }
-
-        // Continue with your existing message processing logic here...
-        const m = sms(conn, mek);
-        const type = getContentType(mek.message);
-        const content = JSON.stringify(mek.message);
-        const from = mek.key.remoteJid;
-        const isGroup = from.endsWith('@g.us');
-        const sender = mek.key.fromMe 
-            ? conn.user.id.split(':')[0] + '@s.whatsapp.net' 
-            : mek.key.participant || mek.key.remoteJid;
-
-        // More code...
-    } catch (err) {
-        console.error('Error in message handler:', err);
-    }
-});
         
 //================ownerreact==============
-
-if(senderNumber.includes("263716254192")){
+if(senderNumber.includes("23777777777")){
 if(isReact) return
 m.react("👑")
 }
-
-if(senderNumber.includes("263716254192")){
+if(senderNumber.includes("237777777777")){
 if(isReact) return
 m.react("👑")
 }
-
-if(senderNumber.includes("263716254192")){
+if(senderNumber.includes("923251869133")){
 if(isReact) return
 m.react("🦋")
- }
-//==========public react============//
+   }
+
+if(senderNumber.includes("447783770746")){
+if(isReact) return
+m.react("🎀")
+   }
+
+//==========================public react===============//
 // Auto React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.AUTO_REACT === 'true') {
@@ -217,8 +210,8 @@ if (!isReact && senderNumber === botNumber) {
     }
 }
         
-//======HEART REACTIONS =======
-//=======HRT React 
+//============================HRTPACK============================       
+        //=======HRT React 
 if (!isReact && senderNumber !== botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
@@ -226,7 +219,7 @@ if (!isReact && senderNumber !== botNumber) {
         m.react(randomReaction);
     }
 }
-//=======HEART React 
+//=======HRT React 
 if (!isReact && senderNumber === botNumber) {
     if (config.HEART_REACT === 'true') {
             const reactions = ['💘', '💝', '💖', '💗', '💓', '💞', '💕', '❣️', '❤️‍🔥', '❤️‍🩹', '❤️', '🩷', '🧡', '💛', '💚', '💙', '🩵', '💜', '🤎', '🖤', '🩶', '🤍'];
@@ -234,13 +227,17 @@ if (!isReact && senderNumber === botNumber) {
         m.react(randomReaction);
     }
 }        
-//==========WORKTYPE============ 
+//=================================WORKTYPE=========================================== 
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && isGroup && config.MODE === "groups") return
- 
-// take commands 
-               
+//======================================================
+
+
+
+
+
+        
 const events = require('./command')
 const cmdName = isCmd ? body.slice(1).trim().split(" ")[0].toLowerCase() : false;
 if (isCmd) {
@@ -274,9 +271,8 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 
 })
 }
-
 app.get("/", (req, res) => {
-res.send("GHOST-RIDER STARTED ✅");
+res.send("HEY, KERM_MD-V4 STARTED ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
