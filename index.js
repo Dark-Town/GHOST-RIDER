@@ -1,9 +1,3 @@
-/*created by Kgtech 🕵
-contact dev1 237656520674 ♻️
-contact dev2 237650564445 ♻️
-© Copy coder alert ⚠
-*/
-
 const {
 default: makeWASocket,
 useMultiFileAuthState,
@@ -55,7 +49,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("CONNECTING KERM_MD-V4🧬...");
+console.log("CONNECTING GHOST-RIDER🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -83,24 +77,24 @@ require("./plugins/" + plugin);
 }
 });
 console.log('PLUGINS FILES INSTALL SUCCESSFULLY ✅')
-console.log('KERM_MD-V4 CONNECTED TO WHATSAPP ENJOY ✅')
+console.log('GHOST-RIDER CONNECTED TO WHATSAPP ENJOY ✅')
 
 let up = `*╭──────────────●●►*
-> *➺Kᴇʀᴍ_ᴍᴅ-ᴠ4 ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋɢ ᴛᴇᴄʜ✅*
+> *GHOST-RIDER ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋɢ ᴛᴇᴄʜ✅*
 
-> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ4❁*
+> *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs GHOST-RIDER*
 
-*https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45*
+*https://whatsapp.com/channel/*
 
-> *❁ᴊᴏɪɴ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ4❁*
+> *❁ᴊᴏɪɴ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs GHOST-RIDER*
 
-*https://youtube.com/@KermHackTools-s9s*
+*https://youtube.com/*
 
-*╭⊱✫🐲 KERM_MD-V4 🐲✫⊱╮*
-*│✫➠ - 📂REPOSITORY NAME:* *KERM_MD-V4*
+*╭⊱✫🐲 GHOST-RIDER 🐲✫⊱╮*
+*│✫➠ - 📂REPOSITORY NAME:* *GHOST-RIDER*
 *│✫➠ - 📃DESCRIPTION:* *THE WORLD BEST WHATSAPP BOT♻️*
-*│✫➠ - 🛡️OWNER:* *KG TECH🇨🇲*
-*│✫➠ - 🌐URL:* *https://github.com/Kgtech-cmr/KERM_MD-V4*
+*│✫➠ - 🛡️OWNER:* *TCRONEB HACKX & CRUZ THE TRADER🇿🇼*
+*│✫➠ - 🌐URL:* *https://github.com/DARK-Town/GHOST-RIDER*
 
 *YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\n*PREFIX: ${prefix}*
 
@@ -272,7 +266,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("HEY, KERM_MD-V4 STARTED ✅");
+res.send("HEY, GHOST-RIDER STARTED ✅");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
