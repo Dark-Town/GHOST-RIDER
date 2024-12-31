@@ -1,12 +1,12 @@
 {
-  "name": "KERM_MD-V4",
+  "name": "GHOST-RIDER",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name KERM_MD-V4",
-    "stop": "pm2 stop KERM_MD-V4",
-    "restart": "pm2 restart KERM_MD-V4"
+    "start": "pm2 start index.js --deep-monitoring --attach --name GHOST-RIDER",
+    "stop": "pm2 stop GHOST-RIDER",
+    "restart": "pm2 restart GHOST-RIDER"
   },
   "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
