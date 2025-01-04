@@ -5,24 +5,9 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "ENTER YOUR SESSION HERE",
-AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
-MODE: process.env.MODE || "public",
-AUTO_VOICE: process.env.AUTO_VOICE || "false",
-AUTO_STICKER: process.env.AUTO_STICKER || "false",
-AUTO_REPLY: process.env.AUTO_REPLY || "false",
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/osriwc.jpg",
-ALIVE_MSG: process.env.ALIVE_MSG || "HI DEAR IM ONLINE I'M GHOST-RIDER WHATSAPP BOT\n\n> 𝖡𝖸 𝖪𝖦𝖳𝖤𝖢𝖧",
-ANTI_LINK: process.env.ANTI_LINK || "true",
-ANTI_BAD: process.env.ANTI_BAD || "true",
-PREFIX: process.env.PREFIX || ".",
-FAKE_RECORDING: process.env.FAKE_RECORDING || "false",
-FAKE_TYPING: process.env.FAKE_TYPING || "false",
-ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",
-CURRENT_STATUS: process.env.CURRENT_STATUS || "true",
-AUTO_REACT: process.env.AUTO_REACT || "false",
-HEART_REACT: process.env.HEART_REACT || "false",
-OWNER_REACT: process.env.OWNER_REACT || "false",
-BOT_NAME: process.env.BOT_NAME || "➺『𝙶𝙷𝙾𝚂𝚃-𝚁𝙸𝙳𝙴𝚁』࿐",
-OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+SESSION_ID: process.env.SESSION_ID || "💚🎗𝗔𝗱𝗱 𝗬𝗼𝘂𝗿 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗶𝗱 𝗛𝗲𝗿𝗲💙🎉", // 📌 𝗚𝗲𝘁 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 𝗶𝗱 𝗶𝗻 𝗦𝗨𝗛𝗔𝗦-𝗠𝗗 𝗣𝗮𝗶𝗿 𝗦𝗶𝘁𝗲 📌
+SUDO_NB: process.env.SUDO_NB || "", // 𝗔𝗱𝗱 𝗬𝗼𝘂𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 𝗛𝗲𝗿𝗲 𝗪𝗶𝘁𝗵 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 𝗖𝗼𝗱𝗲
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "false", // 📌 𝘁𝗿𝘂𝗲 𝗼𝗿 𝗳𝗮𝗹𝘀𝗲 𝗮𝘀 𝗬𝗼𝘂 𝗟𝗶𝗸𝗲 📌
+OWNER_NUMBER: "",
+MODE: process.env.MODE || "public", // 📌 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗼𝗿 𝗽𝘂𝗯𝗹𝗶𝗰 𝗮𝘀 𝗬𝗼𝘂 𝗟𝗶𝗸𝗲 📌
 };
