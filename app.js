@@ -1,5 +1,5 @@
 {
-  "name": "SUHAS-MD-V8",
+  "name": "GHOST-RIDER",
   "description": "Javascript WhatsApp bot made by Suhas Pathsindu",
   "logo": "https://telegra.ph/file/fa2ef290194c0cf1f8af3.jpg",
   "keywords": ["bot"],
