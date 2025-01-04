@@ -1,9 +1,0 @@
------------
-
-***WELCOME TO KERM_MD-V4 PLUGINS LIST CREATED BY KGTECH 237***
-
------------
-
-***THE WORLD BEST WHATSAPP BOT***
-
-----------
