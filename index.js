@@ -29,7 +29,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("🧡 SUHAS-MD-V9 Session Downloaded ✅")
+console.log("🧡 GHOST_RIDER Session Downloaded ✅")
 })})}
 
 const express = require("express");
@@ -39,7 +39,7 @@ const port = process.env.PORT || 8000;
 //=============================================
 
 async function connectToWA() {
-console.log("💙Connecting SUHAS-MD-V9 WhtasApp Bot...💙");
+console.log("💙Connecting GHOST_RIDER WhtasApp Bot...💙");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -59,7 +59,7 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('💕 SUHAS-MD-V9 Bot Connected To WhatsApp Succesfully. 🎉')
+console.log('💕 GHOST_RIDER Bot Connected To WhatsApp Succesfully. 🎉')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
@@ -67,9 +67,9 @@ require("./plugins/" + plugin);
 }
 });
 console.log('Plugins installed successful 🧬✅')
-console.log('💕 SUHAS-MD-V9 ❤')
+console.log('💕 GHOST_RIDER ❤')
 
-let up = `👋 SUHAS-MD Connected Successful 🤖✅*\n⦁ PREFIX: ${prefix}\n⦁ Main CMD: .menu/.allmenu\n⦁ Bot Main Owner : Suhas Pathsindu\n⦁ Total CMD: 200+\n\n*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*\n\n*🏮ꜱᴜʙꜱᴄʀɪʙᴇ ᴜꜱ* ➟https://youtube.com/@suhasbro\n\n*💡ꜰᴏʟʟᴏᴡ ᴜꜱ* ➟https://whatsapp.com/channel/0029VagKNUe96H4IdMbr9f2o\n\n*✨ᴡᴇʙ ꜱɪᴛᴇ* ➠ https://suhas-bro.vercel.app/\n\n*🎉ᴛᴇʟᴇɢʀᴀᴍ* ➠https://t.me/suhasbro\n\n*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*\n\n\n*_🗣️Sʜᴇʀᴇ Oᴜʀ YᴏᴜTᴜʙᴇ Cʜᴀɴɴᴇʟ Lɪɴᴋ & WʜᴀᴛꜱAᴘᴘ Cʜᴀɴɴᴇʟ Lɪɴᴋ Wɪᴛʜ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ...💙_*\n\n> *✨ Powered By SUHAS-MD-V9 💞*`;
+let up = `👋 GHOST_RIDER Connected Successful 🤖✅*\n⦁ PREFIX: ${prefix}\n⦁ Main CMD: .menu/.allmenu\n⦁ Bot Main Owner : Suhas Pathsindu\n⦁ Total CMD: 200+\n\n*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*\n\n*🏮ꜱᴜʙꜱᴄʀɪʙᴇ ᴜꜱ* ➟https://youtube.com/\n\n*💡ꜰᴏʟʟᴏᴡ ᴜꜱ* ➟https://whatsapp.com/channel\n\n*✨ᴡᴇʙ ꜱɪᴛᴇ* ➠ https:///\n\n*🎉ᴛᴇʟᴇɢʀᴀᴍ* ➠https://t.mo\n\n*➟➟➟➟➟➟➟➟➟➟➟➟➟➟➟*\n\n\n*_🗣️Sʜᴇʀᴇ Oᴜʀ YᴏᴜTᴜʙᴇ Cʜᴀɴɴᴇʟ Lɪɴᴋ & WʜᴀᴛꜱAᴘᴘ Cʜᴀɴɴᴇʟ Lɪɴᴋ Wɪᴛʜ Yᴏᴜʀ Fʀɪᴇɴᴅꜱ...💙_*\n\n> *✨ Powered By TcroneB HackX 💞*`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/mbP3mpW/20241207-221016.jpg` }, caption: up })
 
@@ -176,7 +176,7 @@ command.function(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, i
 })
 }
 app.get("/", (req, res) => {
-res.send("💛 SUHAS-MD-V9 Started. 💛");
+res.send("💛 GHOST_RIDER Started. 💛");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
