@@ -4,18 +4,18 @@
   "keywords": [
     "whatsapp Ai"
   ],
-  "repository": "https://github.com/GlobalTechInfo/ULTRA-MD",
+  "repository": "https://github.com/Dark-Town/GHOST-RIDER",
   "stack": "container",
   "env": {
     "OWNERS": {
       "description": "owner number",
       "required": true,
-      "value": "923444844060"
+      "value": "263716394979"
     },
     "BOTNAME": {
       "description": "Give your BOT a name",
       "required": true,
-      "value": "ULTRA-MD"
+      "value": "GHOST-RIDER"
     },
     "DATABASE_URL": {
       "description": "your mongodb database url",
