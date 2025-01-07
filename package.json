@@ -1,5 +1,5 @@
 {
-    "name": "Ultra",
+    "name": "Ghost",
     "version": "3.2.9",
     "description": "Advanced WhatsApp",
     "main": "index.js",
@@ -28,16 +28,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/GlobalTechInfo/ULTRA-MD",
+    "homepage": "https://github.com/Dark-Town/GHOST-RIDER",
     "author": {
-        "name": "GlobalTechInfo"
+        "name": "Dark-Town"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/GlobalTechInfo/ULTRA-MD.git"
+        "url": "git+https://github.com/Dark-Town/GHOST-RIDER.git"
     },
     "bugs": {
-        "url": "https://github.com/GlobalTechInfo/ULTRA-MD/issues"
+        "url": "https://github.com/Dark-Town/GHOST-RIDER/issues"
     },
     "license": "Apache License 2.0",
     "dependencies": {
