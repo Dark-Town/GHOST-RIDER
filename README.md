@@ -227,7 +227,7 @@ jobs:
 
 | TCRONEB HACKX 👤              | CYBER SPACE 👤              | CRUZ THE TRADER 👤            |
 |---------------------|---------------------|---------------------|
-[![Owner](https://i.ibb.co/d0bzS4q/download-1.jpg)](https://github.com/Dark-Town/Dark-Town) | [![Vihanga](https://i.ibb.co/TLLQdL6/download.jpg)](https://github.com/Cyber-Space/Cyber-space) | [![Sadeepa](https://i.ibb.co/v4ZjktG/20241201141703.jpg)](https://github.com/cybercruz222/CRUZ_THE_TRADER) |
+[![Owner](https://i.ibb.co/d0bzS4q/download-1.jpg)](https://github.com/Dark-Town/Dark-Town) | [![Vihanga](https://i.ibb.co/TLLQdL6/download.jpg)](https://github.com/THEOPHILUS739) | [![Sadeepa](https://i.ibb.co/v4ZjktG/20241201141703.jpg)](https://github.com/cybercruz222/CRUZ_THE_TRADER) |
 | DEVELOPER & FOUNDER | GRAPHICS AND JAVASCRIPT  | BUG TESTER |
 </div>
 <hr>
