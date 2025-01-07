@@ -40,8 +40,8 @@ let str = `
 🚀 *_Buckle up ${name}, ${greeting}! We're going on an adventure!_* 🚀
 
 📋 *_Quote of the day: ${quote}_* 📋
-> ➠ *Bot Name* : *ULTRA-MD*
-> ➠ *Version*     : *3 . 1 . 0*
+> ➠ *Bot Name* : *𝙶𝙷𝙾𝚂𝚃-𝐑𝐈𝐃𝐄𝐑-𝙼𝙳*
+> ➠ *Version*     : *𝐍𝐎𝐍𝐄*
 > ➠ *Type*          : *PLUGINS*
 > ➠ *Platform*   : *LINUX*
 
