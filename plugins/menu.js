@@ -93,7 +93,7 @@ let handler = async (m, { conn, usedPrefix }) => {
                                 "name": "cta_url",
                                 "buttonParamsJson": JSON.stringify({
                                     "display_text": "SCRIPT 💕",
-                                    "url": "https://github.com/GlobalTechInfo/ULTRA-MD"
+                                    "url": "https://github.com/Dark-Town/GHOST-RIDER"
                                 })
                             }
                         ],
