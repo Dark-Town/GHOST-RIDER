@@ -70,7 +70,7 @@
 <br>
 <h3>SEVER ➊</h3>
 <div align="center">
-<button><tr><a href="https://ghost-pair-ihmy.onrender.com/">👀 SESSION_ID 🎁 ➊</a></tr></button>
+<button><tr><a href="https://ghost-k6k3.onrender.com/">👀 SESSION_ID 🎁 ➊</a></tr></button>
 <br>
 <h3>SEVER ❷</h3>
 <div align="center">
