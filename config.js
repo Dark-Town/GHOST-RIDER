@@ -1,102 +1,69 @@
-import { watchFile, unwatchFile } from 'fs'
-import chalk from 'chalk'
-import { fileURLToPath } from 'url'
-import fs from 'fs'
+const { Sequelize } = require('sequelize');
+const fs = require('fs');
 
-import dotenv from 'dotenv'
-dotenv.config()
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env', override: true });
 
-const defaultOwner = '923444844060';
+const convertToBool = (text, fault = 'true') => text === fault;
+const toBool = (x) => (x && x.toLowerCase() === 'true') || false;
 
+global.apikey = { 'https://api.adithyan.xyz': 'free' };
+global.apiUrl = 'https://hermit-api.koyeb.app/';
 
-// Check for the OWNERS environment variable; if not found, use the default
-const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || 'your number';  // put your number here
+const DATABASE_URL = process.env.DATABASE_URL || './database.db';
+process.env.NODE_OPTIONS = '--max_old_space_size=2560';
 
-const ownerlist = ownervb.split(';');
+const DEBUG = convertToBool(process.env.DEBUG, 'true');
 
-global.owner = [];
-for (let i = 0; i < ownerlist.length; i++) {
-    global.owner.push([ownerlist[i], true]);
-}
-//
-global.botname = process.env.BOTNAME || 'ULTRA-MD';
-global.pairingNumber = process.env.BOT_NUMBER || 'your number';  // put your number here
-global.SESSION_ID = process.env.SESSION_ID || 'session id';  // put your session id here
-
-global.mods = []
-global.prems = []
-global.allowed = ['923444844060', '923051391007']
-global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
-global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-global.keysxteammm = [
-  '29d4b59a4aa687ca',
-  '5LTV57azwaid7dXfz5fzJu',
-  'cb15ed422c71a2fb',
-  '5bd33b276d41d6b4',
-  'HIRO',
-  'kurrxd09',
-  'ebb6251cc00f9c63',
-]
-global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
-global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
-global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = ['GataDios']
-
-global.canal = 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07'
-
-
-global.APIs = {
-  // API Prefix
-  // name: 'https://website'
-  xteam: 'https://api.xteam.xyz',
-  dzx: 'https://api.dhamzxploit.my.id',
-  lol: 'https://api.lolhuman.xyz',
-  violetics: 'https://violetics.pw',
-  neoxr: 'https://api.neoxr.my.id',
-  zenzapis: 'https://zenzapis.xyz',
-  akuari: 'https://api.akuari.my.id',
-  akuari2: 'https://apimu.my.id',
-  nrtm: 'https://fg-nrtm.ddns.net',
-  bg: 'http://bochil.ddns.net',
-  fgmods: 'https://api.fgmods.xyz',
-}
-global.APIKeys = {
-  // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
-  'https://api.neoxr.my.id': `${keysneoxr}`,
-  'https://violetics.pw': 'beta',
-  'https://zenzapis.xyz': `${keysxxx}`,
-  'https://api.fgmods.xyz': 'm2XBbNvz',
-}
-
-// Sticker WM
-global.premium = 'true'
-global.packname = 'GLOBAL-MD'
-global.author = 'GlobalTechInfo'
-global.menuvid = 'https://i.imgur.com/2U2K9YA.mp4'
-global.igfg = ' Follow on Instagram\nhttps://www.instagram.com/global.techinfo'
-global.dygp = 'https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07'
-global.fgsc = 'https://github.com/GlobalTechInfo/ULTRA-MD'
-global.fgyt = 'https://youtube.com/@GlobalTechInfo'
-global.fgpyp = 'https://youtube.com/@GlobalTechInfo'
-global.fglog = 'https://i.ibb.co/G2dh9cB/qasim.jpg'
-global.thumb = fs.readFileSync('./assets/qasim.jpg')
-
-global.wait = '⏳'
-global.rwait = '⏳'
-global.dmoji = '🤭'
-global.done = '✅'
-global.error = '❌'
-global.xmoji = '🤩'
-
-global.multiplier = 69
-global.maxwarn = '3'
-
-let file = fileURLToPath(import.meta.url)
-watchFile(file, () => {
-  unwatchFile(file)
-  console.log(chalk.redBright("Update 'config.js'"))
-  import(`${file}?update=${Date.now()}`)
-})
+module.exports = {
+  VERSION: 'v4.4.4',
+  SESSION_ID: process.env.SESSION_ID || '',
+  MODE: (process.env.MODE || 'private').toLowerCase(),
+  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  SEND_READ: toBool(process.env.READ_COMMAND),
+  READ_MSG: toBool(process.env.READ_MSG),
+  MSG_LOG: convertToBool(process.env.LOG_MSG),
+  BLOCKCHAT: process.env.BLOCK_CHAT || false,
+  LANG: (process.env.LANGUAGE || 'EN').toUpperCase(),
+  ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
+  BOT_NAME: process.env.BOT_NAME || 'ʜᴇʀᴍɪᴛ',
+  AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
+  AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_\n_(Change this by setting var AUTOUNMUTE_MSG)_',
+  ANTILINK_MSG: process.env.ANTILINK_MSG || '_Link Not Allowed!_\n_(Change this by setting var ANTILINK_MSG)_',
+  BOT_INFO: process.env.BOT_INFO || 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;972528277755;https://i.imgur.com/6oRG106.jpeg',
+  AUDIO_DATA: process.env.AUDIO_DATA || 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;https://i.imgur.com/fj2WE83.jpeg',
+  STICKER_DATA: process.env.STICKER_DATA || 'ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ',
+  ERROR_MESSAGE: toBool(process.env.ERROR_MESSAGE, 'true'),
+  SONG_THUMBNAIL: toBool(process.env.SONG_THUMBNAIL),
+  WARN: process.env.WARN || '4',
+  REJECT_CALL: toBool(process.env.REJECT_CALL),
+  KOYEB_API_KEY: process.env.KOYEB_API_KEY || false,
+  KOYEB_APP_NAME: process.env.KOYEB_APP_NAME || '',
+  RENDER_API: process.env.RENDER_API || false,
+  RENDER_NAME: process.env.RENDER_NAME || '',
+  TERMUX_VPS: toBool(process.env.TERMUX || process.env.VPS),
+  AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW),
+  APIKEY: process.env.APIKEY || 'free',
+  AUTH_FILE: process.env.AUTH_FILE || false,
+  START_MSG: toBool(process.env.START_MSG || 'true'),
+  DATABASE_URL: DATABASE_URL,
+  DATABASE: DATABASE_URL === './database.db' 
+    ? new Sequelize({
+        dialect: 'sqlite',
+        storage: DATABASE_URL,
+        logging: false,
+      }) 
+    : new Sequelize(DATABASE_URL, {
+        dialect: 'postgres',
+        ssl: true,
+        protocol: 'postgres',
+        dialectOptions: {
+          native: true,
+          ssl: { require: true, rejectUnauthorized: false },
+        },
+        logging: false,
+      }),
+  RBG_API_KEY: process.env.REMOVE_BG_API_KEY || false,
+  BRAIN_ID: process.env.BRAIN_ID || 'bid=168613&key=EfbnX54Iy9PFIFp3',
+  SUDO: process.env.SUDO || '0,0',
+  DEBUG: DEBUG
+};
