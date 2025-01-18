@@ -39,9 +39,9 @@ Function({
         }
     });
 
-    let msg = `╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
+    let msg = `╭━━━〔 GHOST-RIDER 〕━━━┈⊷
 ┃✵╭──────────────
-┃✵│ Owner : ${BOT_INFO.split(";")[1]}
+┃✵│ BOT NAME : GHOST RIDER 
 ┃✵│ User : ${message.pushName.replace(/[\r\n]+/gm, "")}
 ┃✵│ Plugins : ${commands.length}
 ┃✵│ Runtime : ${runtime(process.uptime())}
