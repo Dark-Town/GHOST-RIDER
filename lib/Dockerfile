@@ -1,6 +1,6 @@
-FROM quay.io/hermit/hermit-ser:latest
+FROM quay.io/zwcoder/ghost-rider:latest
 
-WORKDIR /hermit-bot
+WORKDIR /GHOST-RIDER
 COPY package*.json ./
 RUN npm install
 COPY . .
