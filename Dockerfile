@@ -1,19 +1,6 @@
-FROM node:lts-buster
+FROM quay.io/hermit/hermit-ser:latest
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install && npm install qrcode-terminal
-
-COPY . .
-
-EXPOSE 5000
-
+RUN git clone https://github.com/A-d-i-t-h-y-a-n/hermit-bot /root/hermit-md
+WORKDIR /root/hermit-md/
+RUN npm install
 CMD ["pm2-runtime", "ecosystem.config.js"]
