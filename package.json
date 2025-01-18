@@ -1,15 +1,15 @@
 {
-  "name": "hermit-md",
+  "name": "GHOST-RIDER",
   "version": "4.4.4",
-  "description": "Hermit-md - Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
+  "description": "GHOST RIDER- Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
   "main": "index.js",
   "scripts": {
-    "start": "PIDUSAGE_SILENT=true pm2 start . --attach --name hermit-md"
+    "start": "PIDUSAGE_SILENT=true pm2 start . --attach --name GHOST-RIDER"
   },
-  "author": "A-d-i-t-h-y-a-n",
+  "author": "Dark-Town",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/baileys": "https://github.com/A-d-i-t-h-y-a-n/Baileys.js",
+    "@adiwajshing/baileys": "https://github.com/Dark-Town/Baileys.js",
     "browser-id3-writer": "^5.0.0",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.4.5",
